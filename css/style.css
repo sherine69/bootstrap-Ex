@@ -1,0 +1,97 @@
+/* navbar */
+.navbar-brand img{
+    width: 50px;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.7) 0 100%), url(../images/plant-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+   
+}
+.navbar-nav a{
+    position: relative;
+    margin-left: 20px;
+    padding-inline: 0 !important;  
+
+   
+   
+}
+.navbar-nav a::after  {
+content:"";
+position: absolute;
+width: 0%;
+height: 1px;
+background-color: white;
+left: 0;
+bottom: 0;
+transition: width 0.5s;
+}
+.navbar-nav a:hover::after{
+    width: 100%;
+}
+.navbar-nav .active::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    left: 0;
+    bottom: 0; 
+}
+
+/* Testimonial */
+#Testimonial .carousel-inner img{
+    width: 100px;
+    transform: translateY(50%);
+}
+#Testimonial  h3{
+    padding-top:10px ;
+    position: relative;
+}
+#Testimonial  h3::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#Testimonial .carousel-indicators [data-bs-target] ,#Testimonial .carousel-indicators [data-bs-target] img{
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ /* background-color: tomato; */
+ text-indent: 0;
+}
+/* Gallery */
+#Gallery .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: green;
+    color: white;
+}
+#Gallery .nav-link {
+    color: seagreen;
+}
+/* modal */
+.modal-dialog {
+    max-width: 600px;
+}
+/* contact */
+.form-control:focus {
+ 
+    border:2px solid black;
+    outline: 0;
+    box-shadow: none
+}
+/* scroll-up */
+.scroll-up{
+    text-decoration: none;
+ right: 10px;
+ bottom: 10px;
+ width: 40px;
+ height: 40px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
